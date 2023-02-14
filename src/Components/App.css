@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  background: rgb(172, 172, 172);
+  overflow: hidden;
+}
+
+.message {
+  margin-top: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  height: 4vh;
+  color: red;
+}
+
+#timeCount {
+  border: none;
+  outline: none;
+  padding: 20px;
+  background: rgb(224, 224, 224);
+  width: 30vw;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+#current-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 600;
+  letter-spacing: 10px;
+  animation: scale 1000ms ease-in-out infinite;
+  height: 20vh;
+}
+
+.btn{
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 600;
+  color: white;
+  background: rgb(255, 27, 27);
+  transition: ease-in-out 300ms;
+  font-size: 1.2rem;
+}
+
+.btn:hover{
+  background: rgb(253, 52, 52);
+}
+
+@keyframes scale {
+  0%,100%{
+    scale: 85%;
+  }
+  50%{
+    scale: 100%;
+  }
+}
